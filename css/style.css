@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+/* ====================
+    Common css start
+==================== */
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Quicksand', sans-serif;
+}
+p{
+    font-family: 'Quicksand', sans-serif;
+}
+/* ====================
+    Common css end
+==================== */
+/* ====================
+    Header css start
+==================== */
+.header{
+    padding: 10px 0;
+}
+.first-header-items ul{
+    display: flex;
+}
+.first-header-items ul li a{
+    padding: 0 5px;
+    border-right: 1px solid #7E7E7E;
+    font-size: 14px;
+    font-weight: 500;
+    color: #7E7E7E;
+}
+.middle-header-items p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #7E7E7E;
+}
+.last-header-items ul{
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    color: #7E7E7E;
+    font-family: 'Quicksand', sans-serif;
+}
+.last-header-items ul li{
+    padding: 0 5px;
+    border-right: 1px solid #7E7E7E;
+}
+.last-header-items ul li a{
+    font-size: 14px;
+    font-weight: 500;
+    color: #7E7E7E;
+    font-family: 'Quicksand', sans-serif;
+}
+.last-header-items span{
+    color: #3BB77E;
+}
+/* ====================
+    Header css end
+==================== */
+/* ====================
+    common css start
+==================== */
+/* ====================
+    common css end
+==================== */
+/* ====================
+    common css start
+==================== */
+/* ====================
+    common css end
+==================== */
+/* ====================
+    common css start
+==================== */
+/* ====================
+    common css end
+==================== */
+/* ====================
+    common css start
+==================== */
+/* ====================
+    common css end
+==================== */
+/* ====================
+    common css start
+==================== */
+/* ====================
+    common css end
+==================== */
+/* ====================
+    common css start
+==================== */
+/* ====================
+    common css end
+==================== */
+/* ====================
+    common css start
+==================== */
+/* ====================
+    common css end
+==================== */
+/* ====================
+    common css start
+==================== */
+/* ====================
+    common css end
+==================== */
+/* ====================
+    common css start
+==================== */
+/* ====================
+    common css end
+==================== */
