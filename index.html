@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Slider CSS -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/all.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -39,9 +41,21 @@
                 <div class="col-lg-4">
                     <div class="last-header-items">
                         <ul>
-                            <li>Need help? Call Us:<span>+ 1800 900</span></li>
-                            <li><a href="#">English</a></li>
-                            <li><a href="#">USD</a></li>
+                            <li>Need help? Call Us:<span class="header-contact">+ 1800 900</span></li>
+                            <li><a href="#">English</a><span><i class="fa-solid fa-chevron-down"></i></span>
+                                <ul>
+                                    <li><a href="#">Bangla</a></li>
+                                    <li><a href="#">Mandarin</a></li>
+                                    <li><a href="#">Telegu</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">USD</a><span><i class="fa-solid fa-chevron-down"></i></span>
+                                <ul>
+                                    <li><a href="#">BDT</a></li>
+                                    <li><a href="#">CHY</a></li>
+                                    <li><a href="#">EU</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -52,28 +66,192 @@
         Header end
     ================ -->
     <!-- ===============
-        Header start
+        Header search start
+    ================ -->
+    <section id="header-search">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 header-search-items">
+                    <div class="header-logo">
+                        <a href="#">
+                            <img src="images/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header-search">
+                        <input type="text" placeholder="Search for items..."><span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                    <div class="header-location-button">
+                        <ul>
+                            <li class="main-button">
+                                <span><i class="fa-solid fa-location-dot"></i></span><a href="#">Your Location</a><span><i class="fa-solid fa-chevron-down"></i></span>
+                                <ul class="location-button-drop">
+                                    <li><input type="text"></li>
+                                    <li><a href="#">Your Location</a></li>
+                                    <li><a href="#">Bangladesh</a></li>
+                                    <li><a href="#">Nepal</a></li>
+                                    <li><a href="#">China</a></li>
+                                    <li><a href="#">USA</a></li>
+                                </ul>
+                            </li>
+                        </ul>   
+                    </div>
+                    <div class="header-order">
+                        <div class="compare">
+                            <span><i class="fa-solid fa-code-compare"></i></span><a href="#">Compare</a>
+                        </div>
+                        <div class="wishlist">
+                            <span><i class="fa-regular fa-heart"></i></span><a href="#">Wish list</a>
+                        </div>
+                        <div class="cart">
+                            <span><i class="fa-solid fa-cart-shopping"></i></span><a href="#">Cart</a>
+                        </div>
+                        <div class="account">
+                            <span><i class="fa-regular fa-user"></i></span><a href="#">Account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===============
+        Header search end
     ================ -->
     <!-- ===============
-        Header end
+        Navbar start
+    ================ -->
+    <nav class="navbar navbar-expand-lg main-menu">
+        <div class="container">
+            <div class="nav-item dropdown catagories-button">
+                <span><i class="fa-solid fa-table-cells-large"></i></span>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Browse All Catagories
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Browse Catagories</a></li>
+                    <li><a class="dropdown-item" href="#">Browse Catagories</a></li>
+                    <li><a class="dropdown-item" href="#">Browse Catagories</a></li>
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav-items">
+                    <li class="nav-item">
+                        <span class="deals-icon"><i class="fa-solid fa-fire"></i></span>
+                        <a class="nav-link active" aria-current="page" href="#">Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                        <span><i class="fa-solid fa-chevron-down"></i></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Vendors</a>
+                        <span><i class="fa-solid fa-chevron-down"></i></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Mega menu</a>
+                        <span><i class="fa-solid fa-chevron-down"></i></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                        <span><i class="fa-solid fa-chevron-down"></i></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Pages</a>
+                        <span><i class="fa-solid fa-chevron-down"></i></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-support-info">
+                    <span><i class="fa-solid fa-headphones"></i></span>
+                    <div class="support-num">
+                        <p class="number">1900 = 888</p>
+                        <p class="time">24/7 Support Center</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </nav>
+    <!-- ===============
+        Navbar end
     ================ -->
     <!-- ===============
-        Header start
+        Banner start
+    ================ -->
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-slider">
+                        <div class="slider-item" style="background: url(images/slider-1.png) no-repeat center; background-size: cover">
+                            <div class="banner-text">
+                                <h1>Fresh Vegetables Big Discount</h1>
+                                <p>Save up to 50% on your first order</p>
+                            </div>
+                            <div class="banner-subscribe">
+                                <div class="email-input">
+                                    <span><i class="fa-regular fa-paper-plane"></i></span>
+                                    <input type="email" placeholder="Your email address">
+                                </div>
+                                <div class="banner-button">
+                                    <button type="submit">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item" style="background: url(images/slider-2.png) no-repeat center; background-size: cover;">
+                            <div class="banner-text">
+                                <h1>Don't miss amazing grocery deals</h1>
+                                <p>Sign up for the daily newsletter</p>
+                            </div>
+                            <div class="banner-subscribe">
+                                <div class="email-input">
+                                    <span><i class="fa-regular fa-paper-plane"></i></span>
+                                    <input type="email" placeholder="Your email address">
+                                </div>
+                                <div class="banner-button">
+                                    <button type="submit">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===============
+        Banner end
     ================ -->
     <!-- ===============
-        Header end
+        Catagories start
     ================ -->
+    <section id="catagories">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="catagories-title-items">
+                        <h3 class="common-heading">Featured Catagories</h3>
+                        <div class="catagories-titles">
+                            <p>Cake & Milk</p>
+                            <p>Coffes & Teas</p>
+                            <p>Pet Foots</p>
+                            <p>Vegetables</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- ===============
-        Header start
-    ================ -->
-    <!-- ===============
-        Header end
-    ================ -->
-    <!-- ===============
-        Header start
-    ================ -->
-    <!-- ===============
-        Header end
+        Catagories end
     ================ -->
     <!-- ===============
         Header start
@@ -101,8 +279,6 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- Slick slider JS -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>

@@ -21,6 +21,12 @@ h1, h2, h3, h4, h5, h6{
 p{
     font-family: 'Quicksand', sans-serif;
 }
+.common-heading{
+    font-size: 32px;
+    font-weight: 700;
+    color: #253D4E;
+    font-family: 'Quicksand', sans-serif;
+}
 /* ====================
     Common css end
 ==================== */
@@ -54,7 +60,7 @@ p{
 }
 .last-header-items ul li{
     padding: 0 5px;
-    border-right: 1px solid #7E7E7E;
+    position: relative;
 }
 .last-header-items ul li a{
     font-size: 14px;
@@ -62,35 +68,332 @@ p{
     color: #7E7E7E;
     font-family: 'Quicksand', sans-serif;
 }
-.last-header-items span{
+.last-header-items .header-contact{
     color: #3BB77E;
+}
+.last-header-items ul li ul{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.last-header-items ul li:hover ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    visibility: visible;
+    opacity: 1;
+}
+.last-header-items ul li ul li a{
+    font-size: 14px;
+    font-weight: 500;
+    color: #7E7E7E;
+    font-family: 'Quicksand', sans-serif;
 }
 /* ====================
     Header css end
 ==================== */
 /* ====================
-    common css start
+    Header search css start
+==================== */
+#header-search{
+    padding: 20px 0;
+}
+.header-search-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-search-items .header-search{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 450px;
+    padding: 10px 15px;
+    border: 1px solid #3BB77E;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.header-search-items .header-search input{
+    border: none;
+    width: 350px;
+}
+.header-search-items .header-search span{
+    cursor: pointer;
+    color: #7E7E7E;
+}
+.header-search-items .header-location-button{
+    box-shadow: 0px 0px 5px 0px rgb(125, 125, 125, 0.75);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.header-search-items .header-location-button ul{
+    padding: 6px 10px;
+    margin: 0;
+}
+.header-search-items .header-location-button ul .main-button{
+    display: flex;
+    gap: 5px;
+}
+.header-search-items .header-location-button ul .main-button a{
+    color: #3BB77E;
+    font-size: 16px;
+    font-weight: 500;
+}
+.header-search-items .header-location-button ul .main-button span{
+    color: #7E7E7E;
+}
+.header-search-items .header-order{
+    display: flex;
+    gap: 15px;
+}
+.header-search-items .header-order .compare,
+.header-search-items .header-order .wishlist,
+.header-search-items .header-order .cart,
+.header-search-items .header-order .account{
+    display: flex;
+    gap: 5px;
+}
+.header-search-items .header-order a{
+    font-size: 16px;
+    color: #7E7E7E;
+    margin-top: 5px;
+}
+.header-search-items .header-order span{
+    color: #7E7E7E;
+    font-size: 20px;
+    cursor: pointer;
+}
+.location-button-drop{
+    display: none;
+}
+/* ====================
+    Header search css end
 ==================== */
 /* ====================
-    common css end
+    Navbar css start
+==================== */
+.main-menu{
+    padding: 10px 0;
+}
+.catagories-button{
+    display: flex;
+    gap: 7px;
+    padding: 0 20px;
+    background-color: #3BB77E;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.catagories-button ul li a{
+    color: #7E7E7E;
+}
+.catagories-button:hover{
+    background-color: #29A56C;
+    color: #ffffff;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #7E7E7E;
+    background-color: #fafafa;
+}
+.catagories-button span{
+    line-height: 44px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.catagories-button a{
+    font-size: 16px;
+    font-weight: 700px;
+    line-height: 44px;
+    color: #ffffff;
+}
+.nav-items .nav-item{
+    display: flex;
+    padding: 0 8px;
+}
+.nav-items .nav-item:hover a{
+    color: #3BB77E;
+}
+.nav-items .nav-item a{
+    font-size: 16px;
+    font-weight: 700;
+    color: #253D4E;
+}
+.nav-items .nav-item .deals-icon{
+    color: #3BB77E;
+    font-size: 20px;
+}
+.nav-items .nav-item span{
+    font-size: 8px;
+    color: #7E7E7E;
+    line-height: 40px;
+}
+.nav-support-info{
+    display: flex;
+    gap: 10px;
+}
+.nav-support-info span{
+    font-size: 35px;
+}
+.nav-support-info .support-num p{
+    margin-bottom: 0;
+}
+.nav-support-info .support-num .number{
+    font-size: 26px;
+    font-weight: 700;
+    color: #3BB77E;
+}
+.nav-support-info .support-num .time{
+    font-size: 12px;
+    font-weight: 400;
+    color: #7E7E7E;
+}
+/* ====================
+    Navbar css end
 ==================== */
 /* ====================
-    common css start
+    Banner css start
+==================== */
+.banner{
+    margin: 30px 0;
+}
+.banner-slider{
+    position: relative;
+}
+.banner-slider .slider-item{
+    padding: 80px 90px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.banner-slider .slider-item .banner-text{
+    width: 720px;
+}
+.banner-slider .slider-item .banner-text h1{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 70px;
+    color: #253D4E;
+    margin-bottom: 40px;
+}
+.banner-slider .slider-item .banner-text p{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #7E7E7E;
+    margin-bottom: 65px;
+}
+.banner-slider .slider-item .banner-subscribe{
+    display: flex;
+    height: 60px;
+    width: 435px;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.banner-slider .slider-item .banner-subscribe .email-input input{
+    width: 252px;
+    border: none;
+}
+.banner-slider .slider-item .banner-subscribe .email-input span{
+    font-size: 18px;
+    color: #7E7E7E;
+    margin: 0 15px;
+}
+.banner-slider .slider-item .banner-subscribe .banner-button button{
+    padding: 17px 30px;
+    background-color: #3BB77E;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.banner-slider .prev-arrow{
+    position: absolute;
+    top: 220px;
+    left: 15px;
+    z-index: 33;
+    font-size: 18px;
+    padding: 15px 17px;
+    color: #7E7E7E;
+    background-color: #F2F3F4;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.banner-slider .next-arrow{
+    position: absolute;
+    top: 220px;
+    right: 15px;
+    font-size: 18px;
+    padding: 15px 17px;
+    color: #7E7E7E;
+    background-color: #F2F3F4;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.banner-slider .prev-arrow:hover,
+.banner-slider .next-arrow:hover{
+    background-color: #3BB77E;
+    color: #ffffff;
+}
+/* ====================
+    Banner css end
 ==================== */
 /* ====================
-    common css end
+    Catagories css start
 ==================== */
+#catagories{
+    padding: 50px 0;
+}
+.catagories-title-items{
+    display: flex;
+    gap: 30px;
+}
+.catagories-titles{
+    display: flex;
+    gap: 30px;
+}
 /* ====================
-    common css start
-==================== */
-/* ====================
-    common css end
-==================== */
-/* ====================
-    common css start
-==================== */
-/* ====================
-    common css end
+    Catagories css end
 ==================== */
 /* ====================
     common css start
