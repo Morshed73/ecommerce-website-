@@ -21,6 +21,17 @@ $('.banner-slider').slick({
   autoplay: true,
   autoplaySpeed: 2000,
   arrows: true,
+  dots: true,
   prevArrow: '<i class="fa-solid fa-chevron-left prev-arrow"></i>',
   nextArrow: '<i class="fa-solid fa-chevron-right next-arrow"></i>',
+});
+// catagories slider
+$('.catagories-slider').slick({
+  slidesToShow: 10,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  arrows: true,
+  prevArrow: '<i class="fa-solid fa-arrow-left prev-arrow"></i>',
+  nextArrow: '<i class="fa-solid fa-arrow-right next-arrow"></i>',
 });

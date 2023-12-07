@@ -375,6 +375,34 @@ p{
     background-color: #3BB77E;
     color: #ffffff;
 }
+.banner-slider .slick-dots{
+    display: flex;
+    font-size: 0;
+    gap: 7px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.banner-slider .slick-dots li button{
+    padding: 7px;
+    background-color: #ffffff;
+    border: 1px solid #253D4E;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.banner-slider .slick-dots .slick-active button{
+    border: none;
+    background-color: #3BB77E;
+    padding: 8px;
+}
 /* ====================
     Banner css end
 ==================== */
@@ -391,6 +419,150 @@ p{
 .catagories-titles{
     display: flex;
     gap: 30px;
+}
+.catagories-titles a{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #253D4E;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.catagories-titles a:hover{
+    color: #3BB77E;
+    line-height: 40px;
+}
+.catagories-slider .item-text h4 a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #253D4E;
+}
+.catagories-slider{
+    position: relative;
+    margin-top: 30px;
+}
+.catagories-slider .catagories-item-1{
+    background-color: #FFFCEB;
+}
+.catagories-slider .catagories-item-2{
+    background-color: #ECFFEC;
+}
+.catagories-slider .catagories-item-3{
+    background-color: #FEEFEA;
+}
+.catagories-slider .catagories-item-4{
+    background-color: #FFF3EB;
+}
+.catagories-slider .catagories-item-5{
+    background-color: #FFF3FF;
+}
+.catagories-slider .catagories-item-6{
+    background-color: #F2FCE4;
+}
+.catagories-slider .catagories-item-7{
+    background-color: #FEEFEA;
+}
+.catagories-slider .catagories-item-8{
+    background-color: #FFFCEB;
+}
+.catagories-slider .catagories-item-9{
+    background-color: #FEEFEA;
+}
+.catagories-slider .catagories-item-10{
+    background-color: #ECFFEC;
+}
+.catagories-slider .catagories-item-11{
+    background-color: #F2FCE4;
+}
+.catagories-slider .catagories-item-1,
+.catagories-slider .catagories-item-2,
+.catagories-slider .catagories-item-3,
+.catagories-slider .catagories-item-4,
+.catagories-slider .catagories-item-5,
+.catagories-slider .catagories-item-6,
+.catagories-slider .catagories-item-7,
+.catagories-slider .catagories-item-8,
+.catagories-slider .catagories-item-9,
+.catagories-slider .catagories-item-10,
+.catagories-slider .catagories-item-11{
+    margin: 0 6px 15px;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 190px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.catagories-slider .catagories-item-1:hover,
+.catagories-slider .catagories-item-2:hover,
+.catagories-slider .catagories-item-3:hover,
+.catagories-slider .catagories-item-4:hover,
+.catagories-slider .catagories-item-5:hover,
+.catagories-slider .catagories-item-6:hover,
+.catagories-slider .catagories-item-7:hover,
+.catagories-slider .catagories-item-8:hover,
+.catagories-slider .catagories-item-9:hover,
+.catagories-slider .catagories-item-10:hover,
+.catagories-slider .catagories-item-11:hover{
+    border: 1px solid #BCE3C9;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+}
+.catagories-slider .catagories-item-1:hover h4 a,
+.catagories-slider .catagories-item-2:hover h4 a,
+.catagories-slider .catagories-item-3:hover h4 a,
+.catagories-slider .catagories-item-4:hover h4 a,
+.catagories-slider .catagories-item-5:hover h4 a,
+.catagories-slider .catagories-item-6:hover h4 a,
+.catagories-slider .catagories-item-7:hover h4 a,
+.catagories-slider .catagories-item-8:hover h4 a,
+.catagories-slider .catagories-item-9:hover h4 a,
+.catagories-slider .catagories-item-10:hover h4 a,
+.catagories-slider .catagories-item-11:hover h4 a{
+    color: #3BB77E;
+}
+.catagories-slider .prev-arrow, 
+.catagories-slider .next-arrow{
+    position: absolute;
+    top: -80px;
+    color: #253D4E;
+    padding: 15px;
+    background-color: #F2F3F4;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.catagories-slider .prev-arrow{
+    right: 55px;
+    z-index: 33;
+}
+.catagories-slider .next-arrow{
+    right: 0;
+}
+.catagories-slider .prev-arrow:hover, 
+.catagories-slider .next-arrow:hover{
+    background-color: #3BB77E;
+    color: #ffffff;
 }
 /* ====================
     Catagories css end
