@@ -27,6 +27,61 @@ p{
     color: #253D4E;
     font-family: 'Quicksand', sans-serif;
 }
+.common-button{
+    padding: 7px 8px 12px;
+    background-color: #3BB77E;
+    width: fit-content;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.common-button a{
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-right: 10px;
+}
+.common-button span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.common-button:hover{
+    background-color: #FDC040;
+}
+.common-button:hover a{
+    margin-right: 15px;
+}
+.add-button{
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #29A56C;
+    padding: 5px;
+    background-color: #BCE3C9;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.add-button:hover{
+    background-color: #3BB77E;
+    color: #ffffff;
+}
 /* ====================
     Common css end
 ==================== */
@@ -564,14 +619,183 @@ p{
     background-color: #3BB77E;
     color: #ffffff;
 }
+.catagories-highlights{
+    position: relative;
+    margin-top: 30px;
+}
+.catagories-highlights .text{
+    position: absolute;
+    z-index: 3;
+    width: 220px;
+    padding-left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.catagories-highlights .text h4{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+}
 /* ====================
     Catagories css end
 ==================== */
 /* ====================
-    common css start
+    Popular css start
 ==================== */
+#popular{
+    padding-bottom: 50px;
+}
+.popular-title{
+    display: flex;
+    justify-content: space-between;
+}
+.popular-title .titles ul{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 0;
+}
+.popular-title .titles ul li a{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #253D4E;
+}
+.popular-title ul li a:hover{
+    color: #3BB77E;
+    line-height: 30px;
+}
+.popular-product{
+    position: relative;
+    padding: 20px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.popular-product:hover{
+    border: 1px solid #BCE3C9;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+}
+.popular-product .hover-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    padding: 20px 20px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.popular-product:hover .hover-image{
+    visibility: visible;
+    opacity: 1;
+}
+.popular-product .cart-action{
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.popular-product:hover .cart-action{
+    visibility: visible;
+    opacity: 1;
+}
+.popular-product .cart-action a{
+    padding: 10px;
+    border: 1px solid #3BB77E;
+    color: #3BB77E;
+    background-color: #ffffff;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.popular-product .cart-action a:hover{
+    color: #FDC040;
+}
+.popular-product .product-cata{
+    margin-bottom: 0;
+}
+.popular-product .product-cata a{
+    font-size: 12px;
+    color: #7E7E7E;
+}
+.popular-product .product-heading a{
+    font-size: 20px;
+    font-weight: 600;
+    color: #253D4E;
+}
+.popular-product .rating{
+    display: flex;
+    gap: 10px;
+}
+.popular-product .rating ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.popular-product .rating ul li{
+    color: #FDC040;
+}
+.popular-product .rating .rating-num{
+    font-size: 14px;
+    line-height: 25px;
+    color: #7E7E7E;
+    margin-bottom: 0;
+}
+.popular-product .product-from{
+    font-size: 14px;
+    font-weight: 400;
+    color: #7E7E7E;
+    padding-top: 10px;
+}
+.popular-product .product-from a{
+    font-size: 14px;
+    font-weight: 500;
+    color: #3BB77E;
+}
+.popular-product .product-price{
+    display: flex;
+    justify-content: space-between;
+}
+.popular-product .product-price h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: #3BB77E;
+}
+.popular-product .product-price h6 span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #7E7E7E;
+}
 /* ====================
-    common css end
+    Popular css end
 ==================== */
 /* ====================
     common css start
