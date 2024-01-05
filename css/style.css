@@ -82,6 +82,9 @@ p{
     background-color: #3BB77E;
     color: #ffffff;
 }
+.col-lg-1-5{
+    width: 20%;
+}
 /* ====================
     Common css end
 ==================== */
@@ -726,7 +729,7 @@ p{
     opacity: 1;
 }
 .popular-product .cart-action a{
-    padding: 10px;
+    padding: 9px;
     border: 1px solid #3BB77E;
     color: #3BB77E;
     background-color: #ffffff;
@@ -747,7 +750,7 @@ p{
     color: #7E7E7E;
 }
 .popular-product .product-heading a{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     color: #253D4E;
 }
@@ -798,16 +801,181 @@ p{
     Popular css end
 ==================== */
 /* ====================
-    common css start
+    Best sells css start
+==================== */
+.best-sells-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.best-sells-title .titles ul{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 0;
+}
+.best-sells-title .titles ul li a{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #253D4E;
+}
+.best-sells-title ul li a:hover{
+    color: #3BB77E;
+    line-height: 30px;
+}
+.side-banner{
+    padding: 100px 50px 128px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.side-banner-heading h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: #253D4E;
+    line-height: 50px;
+}
+.sells-slider .progress{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    margin: 10px 0;
+    /*background: rgb(59, 183, 126) rgb(214, 214, 214);
+    */background: linear-gradient(90deg, rgb(59, 183, 126) 60%, rgb(214, 214, 214) 60%);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.sells-slider .progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+}
+.sells-slider .sold-progress p{
+    font-size: 13px;
+    color: #253D4E;
+}
+.sells-slider .sold::before{
+    content: '';
+}
+.sells-slider .sold::after{
+    content: '/120';
+}
+.sells-slider .cart-button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #3BB77E;
+    padding: 12px 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.sells-slider .cart-button:hover{
+    background-color: #FDC040;
+}
+.sells-slider .cart-button a{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+}
+.sells-slider .cart-button i{
+    margin-right: 5px;
+}
+.best-sells-slider .prev-arrow{
+    position: absolute;
+    top: 35%;
+    left: 10px;
+    padding: 15px;
+    background-color: #F2F3F4;
+    z-index: 2;
+    border-radius: 50%;
+    transform: translateY(-35%);
+    -webkit-transform: translateY(-35%);
+    -moz-transform: translateY(-35%);
+    -ms-transform: translateY(-35%);
+    -o-transform: translateY(-35%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.best-sells-slider .next-arrow{
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    padding: 15px;
+    background-color: #F2F3F4;
+    z-index: 2;
+    border-radius: 50%;
+    transform: translateY(-35%);
+    -webkit-transform: translateY(-35%);
+    -moz-transform: translateY(-35%);
+    -ms-transform: translateY(-35%);
+    -o-transform: translateY(-35%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.best-sells-slider .prev-arrow:hover, 
+.best-sells-slider .next-arrow:hover{
+    background-color: #3BB77E;
+    color: #ffffff;
+}
+/* ====================
+    Best sells css end
 ==================== */
 /* ====================
-    common css end
+    Deals css start
 ==================== */
+#deals{
+    margin: 30px 0;
+}
+.deals-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.deals-heading .all-deals a{
+    font-size: 16px;
+    color: #7E7E7E;
+}
+.deals-heading .all-deals i{
+    font-size: 12px;
+    margin-left: 5px;
+    color: #7E7E7E;
+}
+.deals-heading .all-deals:hover a,
+.deals-heading .all-deals:hover i{
+    color: #3BB77E;
+}
 /* ====================
-    common css start
-==================== */
-/* ====================
-    common css end
+    Deals css end
 ==================== */
 /* ====================
     common css start

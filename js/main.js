@@ -35,3 +35,20 @@ $('.catagories-slider').slick({
   prevArrow: '<i class="fa-solid fa-arrow-left prev-arrow"></i>',
   nextArrow: '<i class="fa-solid fa-arrow-right next-arrow"></i>',
 });
+// best sells slider
+$('.best-sells-slider').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: true,
+  prevArrow: '<i class="fa-solid fa-arrow-left prev-arrow"></i>',
+  nextArrow: '<i class="fa-solid fa-arrow-right next-arrow"></i>',
+});
+// best sells progress
+let progress = document.querySelector('.progress');
+let sold = document.querySelector('.sold');
+sold.innerHTML = progress.value;
+progress.addEventListener("input", function(){
+  sold.innerHTML = this.value;
+})
