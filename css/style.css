@@ -61,6 +61,7 @@ p{
 }
 .add-button{
     display: flex;
+    justify-content: center;
     gap: 5px;
     font-size: 14px;
     font-weight: 600;
@@ -863,11 +864,11 @@ p{
     font-size: 13px;
     color: #253D4E;
 }
-.sells-slider .sold::before{
-    content: '';
-}
-.sells-slider .sold::after{
+.sells-slider .sold-progress .sold::after{
     content: '/120';
+}
+.sells-slider .sold-progress .sold::before{
+    content: '';
 }
 .sells-slider .cart-button{
     display: flex;
@@ -973,6 +974,142 @@ p{
 .deals-heading .all-deals:hover a,
 .deals-heading .all-deals:hover i{
     color: #3BB77E;
+}
+.deals-body{
+    margin-top: 30px;
+    /* display: flex; */
+}
+.deals-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.deals-item:hover .deals-details{
+    top: 63%;
+}
+.deals-item:hover .count-down{
+    top: 33%;
+}
+.deals-banner {
+    overflow: hidden;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.deals-details{
+    position: absolute;
+    top: 65%;
+    width: 85%;
+    padding: 20px 25px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    box-shadow: 1px 1px 45px -30px rgba(0,0,0,0.75);
+}
+.deals-details .product-heading a{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 3px;
+    color: #253D4E;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.deals-details .product-heading a:hover{
+    color: #3BB77E;
+}
+.deals-details .rating{
+    display: flex;
+    gap: 5px;
+}
+.deals-details .rating ul{
+    display: flex;
+    padding: 0;
+}
+.deals-details .rating ul li{
+    color: #FDC040;
+}
+.deals-details .rating p{
+    color: #7E7E7E;
+}
+.deals-details p{
+    color: #7E7E7E;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.deals-details p a{
+    color: #3BB77E;
+}
+.deals-details p:hover a{
+    color: #FDC040;
+}
+.deals-details .product-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.deals-details .product-price h6{
+    font-size: 18px;
+    font-weight: 700;
+    color: #3BB77E;
+}
+.deals-details .product-price h6 span{
+    color: #7E7E7E;
+    font-size: 14px;
+}
+.count-down{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    top: 35%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.count-down .clock{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 65px;
+    width: 50px;
+    background-color: #ffffff;
+    margin:  0 7px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.count-down .clock h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #3BB77E;
+    margin-bottom: 0;
+}
+.count-down .clock h4{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0;
 }
 /* ====================
     Deals css end
